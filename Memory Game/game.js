@@ -52,6 +52,12 @@ content.addEventListener('click', e =>{
         if (count=='10' && play_one>'5'){
           alert(`Player one you won with ${play_one} pairs!!`)
           location.reload();
+        }else if (count=='10' && play_two>5) {
+          alert(`Player two you won with ${play_two} pairs!!`)
+          location.reload();
+        }else if(count=='10'){
+          alert('It is a draw with 5 pairs each')
+          location.reload();
         }
       }else{
         play_two++
@@ -61,7 +67,10 @@ content.addEventListener('click', e =>{
         if (count=='10' && play_one<'5'){
             alert(`Player two you won with ${play_two} pairs!!`)
             location.reload();
-        } else if (count=='10') {
+        } else if (count=='10' && play_one>'5') {
+          alert(`Player one you won with ${play_one} pairs!!`)
+          location.reload();
+        }else if(count=='10'){
           alert('It is a draw with 5 pairs each')
           location.reload();
         }
