@@ -4,8 +4,6 @@ const details = document.querySelector('.details');
 const time = document.querySelector('img.time');
 const icon = document.querySelector('.icon img');
 
-console.log(time);
-console.log(icon);
 
 const updateUi = (data) => {
 
@@ -63,9 +61,14 @@ cityForm.addEventListener('submit', e =>{
   updateCity(city)
   .then(data => updateUi(data))
   .catch(err => console.log(err));
+
+  //set local localStorage
+  localStorage.setItem('city',city);
 });
 
 
-const result =true ? 'value 1' : 'value 2';
-
-console.log(result);
+if(localStorage.getItem('city')){
+  updateCity(localStorage.getItem('city'))
+  .then(data => updateUi(data))
+  .catch(err => console.log(err));
+};
