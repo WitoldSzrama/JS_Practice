@@ -107,7 +107,7 @@ let lost = () =>{
     if(!locals){
       localStorage.setItem('bestScore','0')
     };
-    
+
     if(locals>score){
       alert(`Your score is ${score}`)
       location.reload();
@@ -127,7 +127,7 @@ const up = ()=>{
   if(ide<0){
     ide+=1600;
   }
-  console.log(ide);
+
   check();
   paint_tail();
   lost();
@@ -139,7 +139,7 @@ const down = ()=>{
   if(ide>1600){
     ide-=1600;
   }
-  console.log(ide);
+
   check()
   paint_tail();
   lost();
@@ -152,7 +152,6 @@ const left = ()=>{
   }else{
       ide+=39;
   }
-   console.log(ide);
    check()
    paint_tail();
    lost();
@@ -165,7 +164,6 @@ const right = ()=>{
   }else{
       ide-=39;
   }
-  console.log(ide)
   check()
   paint_tail();
   lost();

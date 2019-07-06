@@ -4,32 +4,31 @@ ball();
 pinki = document.querySelector('.ran');
 
 window.addEventListener('keydown', e=>{
-
   clearInterval(t)
-
+console.log(old_key);
   pinki = document.querySelector('.ran');
-  
+
   if(!(e.key=='ArrowUp' || e.key=='ArrowDown' || e.key=='ArrowLeft' || e.key=='ArrowRight')){
 
     switch(old_key){
 
       case 'ArrowUp':
-        old_key=e.key
+        old_key='ArrowUp'
         t=setInterval(up,time);
         break;
 
       case 'ArrowDown':
-        old_key=e.key
+        old_key='ArrowDown'
         t=setInterval(down,time)
         break;
 
       case 'ArrowLeft':
-        old_key=e.key
+        old_key='ArrowLeft'
       t=setInterval(left,time);
         break;
 
       case 'ArrowRight':
-        old_key=e.key
+        old_key='ArrowRight'
       t=setInterval(right,time);
         break;
       }
@@ -40,22 +39,22 @@ window.addEventListener('keydown', e=>{
   switch(e.key){
 
     case 'ArrowUp':
-      old_key=e.key
+      old_key='ArrowUp'
       t=setInterval(up,time);
       break;
 
     case 'ArrowDown':
-      old_key=e.key
+      old_key='ArrowDown'
       t=setInterval(down,time)
       break;
 
     case 'ArrowLeft':
-      old_key=e.key
+      old_key='ArrowLeft'
     t=setInterval(left,time);
       break;
 
     case 'ArrowRight':
-      old_key=e.key
+      old_key='ArrowRight'
     t=setInterval(right,time);
       break;
 
