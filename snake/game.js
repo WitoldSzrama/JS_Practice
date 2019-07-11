@@ -5,6 +5,7 @@ pinki = document.querySelector('.ran');
 
 window.addEventListener('keydown', e=>{
   clearInterval(t)
+  e.preventDefault();
 console.log(old_key);
   pinki = document.querySelector('.ran');
 

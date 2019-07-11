@@ -13,34 +13,34 @@ body{
 .table{
   background: #a7b54b ;
   display: grid;
-  grid-template-columns: repeat(40,10px);
-  grid-template-rows: repeat(40,10px);
+  grid-template-columns: repeat(40,15px);
+  grid-template-rows: repeat(40,15px);
   border: 2px solid black;
   padding: 0px;
-  margin: 5% auto;
-  width:400px;
-  height: 400px;
+  margin: 0 auto;
+  width:600px;
+  height: 600px;
   -webkit-box-shadow: 26px 29px 21px 21px rgba(7,51,16,1);
   -moz-box-shadow: 26px 29px 21px 21px rgba(7,51,16,1);
   box-shadow: 26px 29px 21px 21px rgba(7,51,16,1);
 }
 
 .one{
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   /* border: 1px solid black; */
 
 }
 
 .snake{
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background: navy;
 }
 
 .head{
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
   background: rgb(254,204,177); /* Old browsers */
   background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%); /* FF3.6-15 */
@@ -51,8 +51,8 @@ body{
 }
 
 .ran {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   background: navy;
   border-radius: 50%;
 }
